@@ -1,0 +1,34 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+  background: #f9f9f9;
+  color: #333;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background: #646cff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card.flipped {
+  background: #fff;
+  color: #646cff;
+  transform: rotateY(180deg);
+}
